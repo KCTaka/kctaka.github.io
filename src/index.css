@@ -1,68 +1,54 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* The actual progress bar fill element styled by Swiper */
+.swiper-custom-progressbar .swiper-pagination-progressbar-fill {
+    background-color: #4ae2a3 !important;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #4ae24a !important;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
+
+/* Hide buttons by default */
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #4ae24a !important;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Show button on hover */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+@layer base {
+    body {
+        @apply text-gray-800 font-sans text-base;
+    }
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+@layer components {
+    .card-header {
+        @apply text-xl font-semibold text-gray-800 mb-2 transform transition-all duration-300 ease-in-out group-hover:text-indigo-600;
+    }
+
+    .card-disc {
+        @apply text-gray-600 text-sm transform transition-all duration-300 ease-in-out;
+    }
+
+    .header1 {
+        @apply text-3xl font-extrabold sm:text-4xl;
+    }
+
+    .subtitle1 {
+        @apply mt-4 text-lg;
+    }
 }
