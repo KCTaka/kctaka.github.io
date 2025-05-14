@@ -77,33 +77,33 @@ const CardGridSection: React.FC = () => {
                 {/* Grid Container */}
                 {/* Adjust grid-cols-3 for different column counts on different screen sizes if needed */}
                 {/* e.g., sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-auto flex-grow">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-auto flex-grow p-10">
                     {sampleGridCards.map((card, index) => (
                         // Card Item - using 'group' for hover effects on children
                         <motion.div
                             key={card.id}
                             className="
-                group bg-white rounded-xl shadow-lg overflow-hidden
-                transform transition-all duration-300 ease-in-out
-                hover:scale-105 hover:shadow-2xl
-                min-h-56 flex flex-col justify-between // Added min-h-56 and flex utilities for content alignment
-              "
+                                        group bg-white rounded-xl shadow-lg overflow-hidden
+                                        transform transition-all duration-300 ease-in-out
+                                        hover:scale-105 hover:shadow-2xl
+                                        min-h-56 flex flex-col justify-between // Added min-h-56 and flex utilities for content alignment
+                                    "
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: false, amount: 0.3 }} // Trigger when 30% of the card is visible, allow re-animation
                             transition={{ duration: 0.5, delay: index * 0.1 }} // Stagger animation slightly
                         >
                             {/* Optional Image
-              {card.imageUrl && (
-                <div className="h-48 w-full overflow-hidden">
-                  <img
-                    src={card.imageUrl}
-                    alt={card.title}
-                    className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
-                  />
-                </div>
-              )}
-              */}
+                            {card.imageUrl && (
+                                <div className="h-48 w-full overflow-hidden">
+                                <img
+                                    src={card.imageUrl}
+                                    alt={card.title}
+                                    className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
+                                />
+                                </div>
+                            )}
+                            */}
 
                             {/* Card Content */}
                             <div className="p-6">
