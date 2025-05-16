@@ -1,0 +1,30 @@
+[
+    {
+        "categories": [
+            "mlai"
+        ],
+        "title": "ML & AI",
+        "description": "Machine Learning and Artificial Intelligence projects."
+    },
+    {
+        "categories": [
+            "math"
+        ],
+        "title": "Mathematics",
+        "description": "Mathematics projects."
+    },
+    {
+        "categories": [
+            "robo"
+        ],
+        "title": "Robotics",
+        "description": "Robotics projects."
+    },
+    {
+        "categories": [
+            "uni"
+        ],
+        "title": "University",
+        "description": "University projects."
+    }
+]

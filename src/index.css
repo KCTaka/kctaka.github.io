@@ -1,6 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "tailwindcss";
-
-
 
 /* The actual progress bar fill element styled by Swiper */
 .swiper-custom-progressbar .swiper-pagination-progressbar-fill {
@@ -12,8 +11,6 @@
 .swiper-button-prev {
     color: #4ae24a !important;
 }
-
-
 
 /* Hide buttons by default */
 .swiper-button-next,
@@ -29,26 +26,38 @@
     opacity: 1;
 }
 
+@theme {
+    --font-roboto: "Roboto", sans-serif;
+}
+
 @layer base {
     body {
         @apply text-gray-800 font-sans text-base;
     }
+
+    h1 {
+        @apply text-5xl font-bold mb-4;
+    }
+
+    h2 {
+        @apply text-2xl font-semibold mb-4;
+    }
+
+    p {
+        @apply text-gray-600 mb-4;
+    }
 }
 
 @layer components {
-    .card-header {
-        @apply text-xl font-semibold text-gray-800 mb-2 transform transition-all duration-300 ease-in-out group-hover:text-indigo-600;
+    .card {
+        @apply bg-white rounded-xl shadow-lg p-6;
     }
 
-    .card-disc {
+    .card h1 {
+        @apply text-xl font-bold text-gray-800 mb-2 transform transition-all duration-300 ease-in-out group-hover:text-indigo-600;
+    }
+
+    .card p {
         @apply text-gray-600 text-sm transform transition-all duration-300 ease-in-out;
-    }
-
-    .header1 {
-        @apply text-3xl font-extrabold sm:text-4xl;
-    }
-
-    .subtitle1 {
-        @apply mt-4 text-lg;
     }
 }

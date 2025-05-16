@@ -24,7 +24,10 @@
         "erasableSyntaxOnly": true,
         "noFallthroughCasesInSwitch": true,
         "noUncheckedSideEffectImports": true,
+        /* Other */
         "baseUrl": ".",
+        "resolveJsonModule": true,
+        "esModuleInterop": true
     },
     "include": [
         "src"

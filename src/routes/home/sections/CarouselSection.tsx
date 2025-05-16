@@ -6,20 +6,18 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'; // Added for coverflow effect
 
-// Data and interface for MyCarousel
-interface CardData {
-    id: number;
-    title: string;
-    content: string;
-}
+import type { CardData } from 'src/types/CardData'; // Importing CardData type
+import Card from 'src/shared/Card'; // Importing Card component
+import project_details from 'src/data/project_cards.json'; // Importing project card details
 
-const cardData: CardData[] = [
-    { id: 1, title: 'Cartoon Frame Interpolation', content: 'Uses PyTorch Lightning, Weight and Biases, and Multi-GPU training to generate frames in-between existing cartoon frames.' },
-    { id: 2, title: 'DQN Snake', content: 'Uses Reinforcement Learning (Deep Q-Network) to play the game of Snake' },
-    { id: 3, title: 'Kalman and Particle Filtering', content: 'Uses Kalman and Particle Filtering techniques for state estimation and tracking' },
-    { id: 4, title: 'Robotic Card Dealer', content: 'Uses a robotic mechanism to deal cards in a game of poker' },
-    { id: 5, title: 'InstaPersona', content: 'Uses a generative model to imitate human personality from social media context' },
-];
+
+const cardData: CardData[] = project_details.filter(card => card.featured).map((card, index: number) => ({
+    id: index + 1,
+    title: card.title,
+    description: card.description,
+    github_link: card.github_link,
+    demo_link: card.demo_link,
+}));
 
 // MyCarousel component definition
 const CarouselSection: React.FC = () => {
@@ -59,25 +57,26 @@ const CarouselSection: React.FC = () => {
                     {cardData.map((card) => (
                         <SwiperSlide key={card.id} className="!flex items-center justify-center">
                             {({ isActive }) => (
-                                <div
+                                <Card
+                                    card={card}
                                     className={`
-                  w-64 h-80 bg-white rounded-xl shadow-lg p-6
-                  transition-all duration-300 ease-in-out
-                  ${isActive ? 'opacity-100 scale-100' : 'opacity-60 scale-90'}
-                `}
-                                >
-                                    <h2 className="text-2xl font-bold text-gray-800 mb-4">{card.title}</h2>
-                                    <p className="text-gray-600">{card.content}</p>
-                                </div>
+                                    card w-64 h-80
+                                    transition-all duration-300 ease-in-out
+                                    ${isActive ? 'opacity-100 scale-100' : 'opacity-60 scale-90'}
+                                    `}
+                                />
                             )}
                         </SwiperSlide>
                     ))}
+
                 </Swiper>
                 <div className="swiper-custom-progressbar" />
             </div>
-            <div className="flex-1 flex items-center justify-center">
-                <h1 className="header1">Featured Projects</h1>
+            <div className="flex-1 flex flex-col items-center justify-center">
+                <h1>Featured Projects</h1>
+                <h2 className="text-green-700">Showcasing the best projects</h2>
             </div>
+
         </section >
     );
 };
