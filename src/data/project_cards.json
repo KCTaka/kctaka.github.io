@@ -44,7 +44,7 @@
     {
         "title": "Animation Frame Interpolation",
         "description": "A deep-learning pipeline that boosts the frame rate of cartoon and animation videos by generating intermediate frames. Built with PyTorch Lightning, Hydra, and Weights & Biases, it explores VQ-VAE, adversarial, and perceptual losses under tight resource constraints.",
-        "github_link": null,
+        "github_link": "https://github.com/KCTaka/AFI",
         "demo_link": null,
         "featured": true,
         "categories": [
@@ -54,7 +54,7 @@
     {
         "title": "GAN Image Generation",
         "description": "Implemented a DCGAN from scratch in PyTorch with multi-GPU DistributedDataParallel training via torchrun. Custom architecture, checkpointing, and flexible hyperparameter tuning enable large-scale unsupervised image-generation experiments.",
-        "github_link": null,
+        "github_link": "https://github.com/KCTaka/DCGAN-Multi-GPU",
         "demo_link": null,
         "featured": true,
         "categories": [
@@ -64,7 +64,7 @@
     {
         "title": "InstaPersona",
         "description": "An AI-powered Instagram chatbot that fine-tunes a 4-bit-quantized Llama-3.1-8B model with LoRA on the user’s DM history. The system cleans JSON exports, trains efficiently, and deploys via instagrapi to generate style-matched real-time replies.",
-        "github_link": null,
+        "github_link": "https://github.com/KCTaka/InstaPersona",
         "demo_link": null,
         "featured": true,
         "categories": [
@@ -74,7 +74,7 @@
     {
         "title": "Virtual Car Localization",
         "description": "A Pygame simulation of a car that uses Kalman and Particle Filters to localize against noisy landmark and speed measurements. Multithreaded architecture, realistic sensor modeling, and real-time visualization demonstrate robust probabilistic state estimation.",
-        "github_link": null,
+        "github_link": "https://github.com/KCTaka/Kalman-Filtering",
         "demo_link": null,
         "featured": false,
         "categories": [
@@ -85,7 +85,7 @@
     {
         "title": "Deep Q-Learning Snake",
         "description": "Trained Deep Q-Networks on binary, sensor-based, and image-based state representations to master the classic Snake game. The PyTorch implementation features experience replay, rotational data augmentation, and modular comparison of state encodings.",
-        "github_link": null,
+        "github_link": "https://github.com/KCTaka/DQN-Snake",
         "demo_link": null,
         "featured": false,
         "categories": [

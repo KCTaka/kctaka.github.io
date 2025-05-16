@@ -93,10 +93,10 @@ const Contact = () => {
                 transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
             >
                 <h2 className="text-2xl font-semibold mb-3">Contact me!</h2>
-                <p className="text-lg mb-4">
+                <p className="text-lg text-white mb-4">
                     Whether you have a question or just want to say hi, feel free to reach out.
                 </p>
-                <p className="text-sm">
+                <p className="text-sm text-white">
                     Looking forward to hearing from you, Casey.
                 </p>
             </motion.div>
