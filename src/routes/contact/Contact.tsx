@@ -97,7 +97,7 @@ const Contact = () => {
                     Whether you have a question or just want to say hi, feel free to reach out.
                 </p>
                 <p className="text-sm text-white">
-                    Looking forward to hearing from you, Casey.
+                    Looking forward to hearing from you.
                 </p>
             </motion.div>
 

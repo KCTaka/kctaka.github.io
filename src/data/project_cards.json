@@ -3,7 +3,7 @@
         "title": "Poker Dealer – Embedded System",
         "description": "An automated Texas Hold’em dealer that uses servo, DC, and stepper motors driven by an ESP32 to isolate and dispense cards with 94 % consistency. Bluetooth commands like “deal:5” and poker-specific functions automate hole, flop, turn, and river dealing.",
         "github_link": null,
-        "demo_link": null,
+        "demo_link": "https://www.youtube.com/watch?v=JpeWfCMttr4",
         "featured": true,
         "categories": [
             "robo"

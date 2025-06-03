@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { motion } from 'framer-motion';
 // Updated Swiper modules import
 import { Autoplay, Keyboard, Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css'
@@ -23,6 +24,11 @@ const cardData: CardData[] = project_details.filter(card => card.featured).map((
 const CarouselSection: React.FC = () => {
     return (
         <section className="h-full snap-start bg-green-100 py-12 relative flex flex-col">
+            <div className="flex-1 flex flex-col items-center justify-center">
+                <h1>Featured Projects</h1>
+                <h2 className="text-green-700">Showcasing the best projects</h2>
+            </div>
+
             <div className="flex-[4]">
                 <Swiper
                     effect={'coverflow'}
@@ -60,7 +66,7 @@ const CarouselSection: React.FC = () => {
                                 <Card
                                     card={card}
                                     className={`
-                                    card w-64 h-80
+                                    card w-80 h-80
                                     transition-all duration-300 ease-in-out
                                     ${isActive ? 'opacity-100 scale-100' : 'opacity-60 scale-90'}
                                     `}
@@ -72,11 +78,6 @@ const CarouselSection: React.FC = () => {
                 </Swiper>
                 <div className="swiper-custom-progressbar" />
             </div>
-            <div className="flex-1 flex flex-col items-center justify-center">
-                <h1>Featured Projects</h1>
-                <h2 className="text-green-700">Showcasing the best projects</h2>
-            </div>
-
         </section >
     );
 };

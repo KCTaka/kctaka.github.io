@@ -11,14 +11,18 @@ export const Header = () => {
     const { pathname } = useLocation();
 
     return (
-        <motion.header
-            className="flex justify-between items-center px-6 py-4 bg-white shadow-md sticky top-0 z-50"
-            initial={{ y: -100 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.5 }}
-        >
-            <div className="text-xl font-bold">KC</div>
-            <nav className="flex space-x-4">
+        <header className="flex justify-between items-center px-6 py-4 bg-white shadow-md sticky top-0 z-50">
+            <motion.div className="text-xl font-bold"
+                initial={{ x: -100 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.5 }}
+            >KC</motion.div>
+            <motion.nav
+                className="flex space-x-4"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+            >
                 {navLinks.map(({ name, path }) => (
                     <Link
                         key={name}
@@ -31,7 +35,7 @@ export const Header = () => {
                         {name}
                     </Link>
                 ))}
-            </nav>
-        </motion.header>
+            </motion.nav>
+        </header>
     );
 };
