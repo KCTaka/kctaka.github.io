@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { motion } from 'framer-motion';
 // Updated Swiper modules import
 import { Autoplay, Keyboard, Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css'
