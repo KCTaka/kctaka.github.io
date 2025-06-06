@@ -4,6 +4,7 @@ export interface CardData {
     description: string;
     github_link: string | null;
     demo_link: string | null;
+    page_link: string | null;
     categories?: string[];
     featured?: boolean | null; // Added featured property
 }

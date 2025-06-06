@@ -13,6 +13,7 @@ const categoryCardData: CardData[] = project_categories_detials.map((card, index
     description: card.description,
     github_link: null,
     demo_link: null,
+    page_link: null,
     categories: card.categories,
 }));
 
@@ -22,6 +23,7 @@ const projectCardData: CardData[] = project_details.map((card, index: number) =>
     description: card.description,
     github_link: card.github_link,
     demo_link: card.demo_link,
+    page_link: card.page_link,
     categories: card.categories,
     featured: card.featured, // Added featured
 }));

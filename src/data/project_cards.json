@@ -4,6 +4,7 @@
         "description": "An automated Texas Hold’em dealer that uses servo, DC, and stepper motors driven by an ESP32 to isolate and dispense cards with 94 % consistency. Bluetooth commands like “deal:5” and poker-specific functions automate hole, flop, turn, and river dealing.",
         "github_link": null,
         "demo_link": "https://www.youtube.com/watch?v=JpeWfCMttr4",
+        "page_link": null,
         "featured": true,
         "categories": [
             "robo"
@@ -14,6 +15,7 @@
         "description": "A soil-health monitoring device combining temperature, humidity, moisture, and pH sensors with an Arduino Nano and Raspberry Pi Pico. Real-time readings appear on an LCD and are converted into actionable soil-care recommendations.",
         "github_link": null,
         "demo_link": null,
+        "page_link": null,
         "featured": false,
         "categories": [
             "robo",
@@ -25,6 +27,7 @@
         "description": "A four-phase university project that took a current-sense power-supply circuit from proposal through PCB layout, testing, and manufacturing-ready documentation. Work included SPICE simulation, custom board fabrication, and iterative design verification.",
         "github_link": null,
         "demo_link": null,
+        "page_link": null,
         "featured": false,
         "categories": [
             "uni"
@@ -35,6 +38,7 @@
         "description": "A suite of TurtleBot3 Waffle Pi labs covering open-loop pose control, PID path following, and EKF-based localization with Lidar and odometry. Implemented controllers and state-estimation algorithms for autonomous navigation and race-track challenges.",
         "github_link": null,
         "demo_link": null,
+        "page_link": null,
         "featured": false,
         "categories": [
             "robo",
@@ -46,6 +50,18 @@
         "description": "A deep-learning pipeline that boosts the frame rate of cartoon and animation videos by generating intermediate frames. Built with PyTorch Lightning, Hydra, and Weights & Biases, it explores VQ-VAE, adversarial, and perceptual losses under tight resource constraints.",
         "github_link": "https://github.com/KCTaka/AFI",
         "demo_link": null,
+        "page_link": null,
+        "featured": true,
+        "categories": [
+            "mlai"
+        ]
+    },
+    {
+        "title": "Stable Diffusion from Scratch",
+        "description": "Generating images from noise with Stable Diffusion with VQVAE and U-Net. The project follows MLOps standards using PyTorch Lightning for multi-GPU training, Weights & Biases for logging and hyperparameter tuning, and Hydra for managing configurations.",
+        "github_link": "https://github.com/KCTaka/Stable-Diffusion-from-Scratch",
+        "demo_link": null,
+        "page_link": "http://kctaka.github.io/Stable-Diffusion-from-Scratch/",
         "featured": true,
         "categories": [
             "mlai"
@@ -56,6 +72,7 @@
         "description": "Implemented a DCGAN from scratch in PyTorch with multi-GPU DistributedDataParallel training via torchrun. Custom architecture, checkpointing, and flexible hyperparameter tuning enable large-scale unsupervised image-generation experiments.",
         "github_link": "https://github.com/KCTaka/DCGAN-Multi-GPU",
         "demo_link": null,
+        "page_link": null,
         "featured": true,
         "categories": [
             "mlai"
@@ -66,6 +83,7 @@
         "description": "An AI-powered Instagram chatbot that fine-tunes a 4-bit-quantized Llama-3.1-8B model with LoRA on the user’s DM history. The system cleans JSON exports, trains efficiently, and deploys via instagrapi to generate style-matched real-time replies.",
         "github_link": "https://github.com/KCTaka/InstaPersona",
         "demo_link": null,
+        "page_link": null,
         "featured": true,
         "categories": [
             "mlai"
@@ -76,6 +94,7 @@
         "description": "A Pygame simulation of a car that uses Kalman and Particle Filters to localize against noisy landmark and speed measurements. Multithreaded architecture, realistic sensor modeling, and real-time visualization demonstrate robust probabilistic state estimation.",
         "github_link": "https://github.com/KCTaka/Kalman-Filtering",
         "demo_link": null,
+        "page_link": null,
         "featured": false,
         "categories": [
             "robo",
@@ -87,6 +106,7 @@
         "description": "Trained Deep Q-Networks on binary, sensor-based, and image-based state representations to master the classic Snake game. The PyTorch implementation features experience replay, rotational data augmentation, and modular comparison of state encodings.",
         "github_link": "https://github.com/KCTaka/DQN-Snake",
         "demo_link": null,
+        "page_link": null,
         "featured": false,
         "categories": [
             "mlai"
@@ -97,6 +117,7 @@
         "description": "An extended-essay research project exploring how origami constructions surpass classical compass-and-straightedge techniques in generating geometric ratios. Surveys origami axioms, proofs, and their applications to advanced geometric problem-solving.",
         "github_link": null,
         "demo_link": null,
+        "page_link": null,
         "featured": false,
         "categories": [
             "math",

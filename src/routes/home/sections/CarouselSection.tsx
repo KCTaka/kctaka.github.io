@@ -17,6 +17,7 @@ const cardData: CardData[] = project_details.filter(card => card.featured).map((
     description: card.description,
     github_link: card.github_link,
     demo_link: card.demo_link,
+    page_link: card.page_link,
 }));
 
 // MyCarousel component definition
