@@ -12,7 +12,7 @@ const PdfViewer: React.FC<{ file: string }> = ({ file }) => {
     return (
         <div className="mt-8 border-4 border-gray-300 rounded-lg overflow-y-auto max-h-[80vh] shadow-2xl bg-gray-200">
             <Document file={file} onLoadSuccess={onDocumentLoadSuccess} loading="Loading PDF...">
-                {Array.from(new Array(numPages), (el, index) => (
+                {Array.from(new Array(numPages), (_, index) => (
                     <div key={`page_wrapper_${index + 1}`} className="flex justify-center bg-gray-500">
                         <Page
                             pageNumber={index + 1}
