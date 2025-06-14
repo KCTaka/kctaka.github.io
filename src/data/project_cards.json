@@ -1,6 +1,6 @@
 [
     {
-        "title": "Poker Dealer – Embedded System",
+        "title": "Poker Dealer - Embedded System",
         "description": "An automated Texas Hold’em dealer that uses servo, DC, and stepper motors driven by an ESP32 to isolate and dispense cards with 94 % consistency. Bluetooth commands like “deal:5” and poker-specific functions automate hole, flop, turn, and river dealing.",
         "github_link": null,
         "demo_link": "https://www.youtube.com/watch?v=JpeWfCMttr4",
@@ -72,7 +72,7 @@
         "description": "Implemented a DCGAN from scratch in PyTorch with multi-GPU DistributedDataParallel training via torchrun. Custom architecture, checkpointing, and flexible hyperparameter tuning enable large-scale unsupervised image-generation experiments.",
         "github_link": "https://github.com/KCTaka/DCGAN-Multi-GPU",
         "demo_link": null,
-        "page_link": null,
+        "page_link": "https://kctaka.github.io/DCGAN-Multi-GPU/",
         "featured": true,
         "categories": [
             "mlai"
@@ -105,7 +105,7 @@
         "title": "Deep Q-Learning Snake",
         "description": "Trained Deep Q-Networks on binary, sensor-based, and image-based state representations to master the classic Snake game. The PyTorch implementation features experience replay, rotational data augmentation, and modular comparison of state encodings.",
         "github_link": "https://github.com/KCTaka/DQN-Snake",
-        "demo_link": null,
+        "demo_link": "https://kctaka.github.io/DQN-Snake/",
         "page_link": null,
         "featured": false,
         "categories": [
@@ -117,7 +117,7 @@
         "description": "An extended-essay research project exploring how origami constructions surpass classical compass-and-straightedge techniques in generating geometric ratios. Surveys origami axioms, proofs, and their applications to advanced geometric problem-solving.",
         "github_link": null,
         "demo_link": null,
-        "page_link": null,
+        "page_link": "/pages/origami",
         "featured": false,
         "categories": [
             "math",

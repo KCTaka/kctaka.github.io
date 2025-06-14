@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# External stuff (You can ignore)
+display_project.py
+project_dump.md
